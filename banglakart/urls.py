@@ -8,12 +8,13 @@ urlpatterns = [
     path('admin/',admin.site.urls),
     path('store/',include('store.urls')),
     path('cart/', include('carts.urls')),
-    path("",views.home,name="home"),
+    
     # path('securelogin/', admin.site.urls),
     # path('', views.home, name='home'),
     # path('store/', include('store.urls')),
     
-    # path('accounts/', include('accounts.urls')),
+    path('accounts/', include('accounts.urls')),
+    path("",views.home,name="home"),
 
     # # ORDERS
     # path('orders/', include('orders.urls')),
